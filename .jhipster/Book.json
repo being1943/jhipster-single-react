@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "author",
+            "otherEntityName": "author",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "publicationDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "changelogDate": "20181207072816",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "book",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

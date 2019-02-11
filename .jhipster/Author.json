@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "books",
+            "otherEntityName": "book",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "author"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique",
+                "minlength",
+                "maxlength",
+                "pattern"
+            ],
+            "fieldValidateRulesMinlength": "2",
+            "fieldValidateRulesMaxlength": 20,
+            "fieldValidateRulesPattern": "^[a-zA-Z0-9]*$"
+        },
+        {
+            "fieldName": "birthDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20181207072344",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "author",
+    "jpaMetamodelFiltering": false,
+    "pagination": "infinite-scroll"
+}

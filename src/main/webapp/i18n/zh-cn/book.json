@@ -1,0 +1,26 @@
+
+{
+    "jhipsterSingleReactApp": {
+        "book" : {
+            "home": {
+                "title": "Books",
+                "createLabel": "创建新 Book",
+                "createOrEditLabel": "创建或编辑 Book"
+            },
+            "created": "Book {{ param }} 创建成功",
+            "updated": "Book {{ param }} 更新成功",
+            "deleted": "Book {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Book {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Book"
+            },
+            "title": "Title",
+            "description": "Description",
+            "publicationDate": "Publication Date",
+            "price": "Price",
+            "author": "Author"
+        }
+    }
+}
